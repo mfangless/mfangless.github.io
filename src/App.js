@@ -1,16 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+
+function MyButton() {
+  return <button>I'm a button</button>;
+}
 
 function App() {
   return (
+    <>
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello World
-        </p>
+        <h1>MFangless</h1>
+        <p>Testing</p>
+        <MyButton />
       </header>
     </div>
+    <p>Testing</p>
+    <p>Testing 2</p>
+    </>
   );
 }
 
