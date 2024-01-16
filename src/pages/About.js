@@ -1,19 +1,28 @@
+import Navbar from "../Navbar";
+import { motion as m } from "framer-motion";
+
 export default function About() {
   return (
-    <h1>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet
-      pharetra volutpat. Mauris accumsan dolor eget quam mattis aliquam.
-      Maecenas lacinia aliquam ullamcorper. Aliquam erat volutpat. Sed
-      scelerisque nisi arcu, ornare malesuada purus pulvinar ut. Duis eros
-      velit, imperdiet suscipit ullamcorper et, tincidunt a elit. Ut dapibus
-      aliquam sem non cursus. Nulla venenatis felis eget mauris molestie ornare.
-      Cras blandit at ante nec laoreet. Vestibulum ut tortor mattis, pretium
-      nisi vel, malesuada metus. Pellentesque semper turpis sem, in vulputate
-      erat ultrices ac. Suspendisse consequat neque id neque dictum, at gravida
-      ante aliquam. Proin vitae augue consectetur, commodo nisi id, laoreet
-      nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-      posuere cubilia curae; Ut ultrices gravida urna eu convallis. Integer et
-      sem non neque sodales aliquet.
-    </h1>
+    <>
+      <Navbar />
+      <m.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+        <div className="centered-thing">
+          <div className="big-text">
+            <h1>Who am I?</h1>
+            <p>
+              I'm mFangless, a front end developer, video game developer and
+              graphic designer. I created this site using React in order to
+              showcase my skills. Here you will find various projects I worked
+              on, and detailed information about each of them. Have a pleasant
+              stay, user!
+            </p>
+          </div>
+        </div>
+      </m.div>
+    </>
   );
 }

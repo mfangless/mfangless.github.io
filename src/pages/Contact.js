@@ -1,15 +1,25 @@
+import Navbar from "../Navbar";
+import { motion as m } from "framer-motion";
+
 export default function Contact() {
   return (
-    <h1>
-      Nullam volutpat in ex id suscipit. Maecenas auctor mollis nisl, eu
-      scelerisque nulla vestibulum et. Donec orci quam, fringilla nec magna at,
-      tempus auctor leo. Fusce id convallis odio. Phasellus sed sapien at risus
-      eleifend scelerisque non quis est. Nunc mollis est vitae justo porttitor
-      pharetra. Etiam massa nulla, tempus id leo eget, molestie auctor purus. Ut
-      scelerisque tempus libero ut ultrices. Curabitur lacinia odio sit amet
-      velit lobortis, a convallis purus finibus. Maecenas quis lorem sed tellus
-      vestibulum malesuada id sed erat. Sed finibus sapien at augue sollicitudin
-      volutpat.
-    </h1>
+    <>
+      <Navbar />
+      <m.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+        <div className="centered-thing">
+          <div className="big-text">
+            <h1>How can you contact me?</h1>
+            <p>
+              Send me an e-mail at <b>9cqwym3r9@mozmail.com</b> (yes this is an
+              actual e-mail address)
+            </p>
+          </div>
+        </div>
+      </m.div>
+    </>
   );
 }
